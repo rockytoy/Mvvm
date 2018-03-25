@@ -3,7 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2005
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RockyToy", "RockyToy\RockyToy.csproj", "{308D24E7-E032-4BA1-9B5E-7EA447E798B9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RockyToy.Contracts.Common", "RockyToy.Contracts.Common\RockyToy.Contracts.Common.csproj", "{66CBB6FF-22E3-4599-81E3-0DAA9E5090E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RockyToy.Contracts.Wpf", "RockyToy.Contracts.Wpf\RockyToy.Contracts.Wpf.csproj", "{2ECEDBA1-6BCE-4A43-959F-4155C988B274}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RockyToy.Core.Common", "RockyToy.Core.Common\RockyToy.Core.Common.csproj", "{A76049F2-DCCF-4AF5-BD65-4011B2AE22A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RockyToy.Core.Wpf", "RockyToy.Core.Wpf\RockyToy.Core.Wpf.csproj", "{1F0E9424-F996-4056-B23E-39B69DA80159}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RockyToy.Resources.Wpf", "RockyToy.Resources.Wpf\RockyToy.Resources.Wpf.csproj", "{3DAF18DE-725D-4514-8E92-DDCF43983E23}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RockyToy.TestApp", "RockyToy.TestApp\RockyToy.TestApp.csproj", "{F13C41E4-457A-48B4-8F72-694CADEB799E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +21,30 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{308D24E7-E032-4BA1-9B5E-7EA447E798B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{308D24E7-E032-4BA1-9B5E-7EA447E798B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{308D24E7-E032-4BA1-9B5E-7EA447E798B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{308D24E7-E032-4BA1-9B5E-7EA447E798B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66CBB6FF-22E3-4599-81E3-0DAA9E5090E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66CBB6FF-22E3-4599-81E3-0DAA9E5090E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66CBB6FF-22E3-4599-81E3-0DAA9E5090E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66CBB6FF-22E3-4599-81E3-0DAA9E5090E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2ECEDBA1-6BCE-4A43-959F-4155C988B274}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2ECEDBA1-6BCE-4A43-959F-4155C988B274}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2ECEDBA1-6BCE-4A43-959F-4155C988B274}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2ECEDBA1-6BCE-4A43-959F-4155C988B274}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A76049F2-DCCF-4AF5-BD65-4011B2AE22A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A76049F2-DCCF-4AF5-BD65-4011B2AE22A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A76049F2-DCCF-4AF5-BD65-4011B2AE22A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A76049F2-DCCF-4AF5-BD65-4011B2AE22A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F0E9424-F996-4056-B23E-39B69DA80159}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F0E9424-F996-4056-B23E-39B69DA80159}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F0E9424-F996-4056-B23E-39B69DA80159}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F0E9424-F996-4056-B23E-39B69DA80159}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DAF18DE-725D-4514-8E92-DDCF43983E23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DAF18DE-725D-4514-8E92-DDCF43983E23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DAF18DE-725D-4514-8E92-DDCF43983E23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DAF18DE-725D-4514-8E92-DDCF43983E23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F13C41E4-457A-48B4-8F72-694CADEB799E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F13C41E4-457A-48B4-8F72-694CADEB799E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F13C41E4-457A-48B4-8F72-694CADEB799E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F13C41E4-457A-48B4-8F72-694CADEB799E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
