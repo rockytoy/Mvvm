@@ -6,6 +6,7 @@ using NLog.Config;
 using NLog.Targets;
 using RockyToy.Contracts.Common;
 using RockyToy.Contracts.Common.Config;
+using RockyToy.Core.Common.Secure;
 
 namespace RockyToy.Core.Common
 {
@@ -65,6 +66,7 @@ namespace RockyToy.Core.Common
 		{
 			Builder
 				.RegisterModule<ActionResultModule>()
+				.RegisterModule<EncryptModule>()
 				.RegisterModule<LoggerModule>();
 		}
 
