@@ -8,8 +8,6 @@ namespace RockyToy.Contracts.Common.Config
 		string AppDataPath { get; }
 		string AppLogPath { get; }
 		string DeviceAppConfigFilePath { get; }
-
 		XDocument Xml { get; }
-
 	}
 }

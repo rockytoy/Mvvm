@@ -8,6 +8,7 @@ using RockyToy.Contracts.Wpf;
 
 namespace RockyToy.Core.Wpf
 {
+
 	public abstract class BaseScreenViewModel : BaseViewModel, IScreenViewModel
 	{
 		private string _title = "No Title";

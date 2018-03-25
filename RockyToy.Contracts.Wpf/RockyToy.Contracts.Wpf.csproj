@@ -99,6 +99,7 @@
     <Compile Include="Common\IDisplayableData.cs" />
     <Compile Include="Common\IDisplayableInt.cs" />
     <Compile Include="IClosableViewModel.cs" />
+    <Compile Include="IScreenOnMenuViewModel.cs" />
     <Compile Include="IScreenView.cs" />
     <Compile Include="IScreenViewModel.cs" />
     <Compile Include="IShellView.cs" />

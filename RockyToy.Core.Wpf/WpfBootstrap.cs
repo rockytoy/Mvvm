@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using System.Security;
 using System.Windows;
 using Autofac;
 using Autofac.Features.Indexed;
@@ -81,6 +82,10 @@ namespace RockyToy.Core.Wpf
 			foreach (var vm in viewModels)
 				if (views.TryGetValue(vm, out var v))
 					Locator.CurrentMutable.Register(v, typeof(IViewFor<>).MakeGenericType(vm));
+		}
+
+		public WpfBootstrap(string appName, SecureString securePwd, byte[] secureToken) : base(appName, securePwd, secureToken)
+		{
 		}
 	}
 }

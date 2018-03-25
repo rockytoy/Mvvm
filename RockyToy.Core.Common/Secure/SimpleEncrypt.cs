@@ -4,7 +4,6 @@ using System.Linq;
 using System.Security;
 using System.Security.Cryptography;
 using System.Text;
-using Autofac.Features.Indexed;
 using RockyToy.Contracts.Common.Extensions;
 using RockyToy.Contracts.Common.Secure;
 
@@ -21,10 +20,10 @@ namespace RockyToy.Core.Common.Secure
 		private readonly SecureString _defaultPassString;
 		private byte[] DefaultPassBytes => Encoding.UTF8.GetBytes(_defaultPassString.ToUnsecureString());
 
-		public SimpleEncrypt(IIndex<string, SecureString> pwds, IIndex<string, byte[]> bytes)
+		public SimpleEncrypt(SecureString pwd, byte[] token)
 		{
-			_tokenBytes = bytes["EncryptDefaultToken"];
-			_defaultPassString = pwds["EncryptDefaultPassword"];
+			_tokenBytes = token;
+			_defaultPassString = pwd;
 		}
 
 		private static byte[] Generate256BitsOfRandomEntropy()
